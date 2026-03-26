@@ -203,7 +203,7 @@ CREATE TABLE Pagos (
 ```json
 {
   "clienteId": 1,
-  "tipoPago": "Credito",
+  "tipoPago": "Crédito",
   "cuenta": "123",
   "valor": 150000.50,
   "descripcion": "Pago inicial"
@@ -275,7 +275,7 @@ GET /api/pagos/{clienteId}
 
 | Campo | Regla |
 |-------|-------|
-| TipoPago | Enum: `Credito` / `Debito` |
+| TipoPago | string: `Crédito` / `Débito` |
 | Cuenta | Obligatoria |
 | Valor | Obligatorio · Decimal · Mayor a `0` |
 | Descripcion | Opcional |
