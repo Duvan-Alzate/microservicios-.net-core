@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/ClientesService/">
+    <Project Path="Clientes.Api/Clientes.Api.csproj" />
+    <Project Path="Clientes.Application/Clientes.Application.csproj" />
+    <Project Path="Clientes.Domain/Clientes.Domain.csproj" />
+    <Project Path="Clientes.Infrastructure/Clientes.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/PagosService/">
+    <Project Path="Pagos.Api/Pagos.Api.csproj" />
+    <Project Path="Pagos.Application/Pagos.Application.csproj" />
+    <Project Path="Pagos.Domain/Pagos.Domain.csproj" />
+    <Project Path="Pagos.Infrastructure/Pagos.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/" />
+</Solution>
