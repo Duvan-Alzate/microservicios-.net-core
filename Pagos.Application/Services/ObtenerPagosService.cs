@@ -1,4 +1,5 @@
-﻿using Pagos.Application.Interfaces;
+﻿using Pagos.Application.DTO;
+using Pagos.Application.Interfaces;
 using Pagos.Domain.Models;
 
 namespace Pagos.Application.Services
@@ -12,9 +13,16 @@ namespace Pagos.Application.Services
             _repo = repo;
         }
 
-        public async Task<List<Pago>> Ejecutar(int clienteId)
+        public async Task<List<ObtenerPagoDto>> Ejecutar(int clienteId)
         {
-            return await _repo.ObtenerPorCliente(clienteId);
+            var pagos = await _repo.ObtenerPorCliente(clienteId);
+
+            return pagos.Select(p => new ObtenerPagoDto
+            {
+                TipoPago = p.TipoPago,
+                Cuenta = p.Cuenta,
+                Valor = p.Valor
+            }).ToList();
         }
     }
 }
