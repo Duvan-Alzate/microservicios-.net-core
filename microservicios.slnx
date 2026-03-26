@@ -11,5 +11,7 @@
     <Project Path="Pagos.Domain/Pagos.Domain.csproj" />
     <Project Path="Pagos.Infrastructure/Pagos.Infrastructure.csproj" />
   </Folder>
-  <Folder Name="/Solution Items/" />
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+  </Folder>
 </Solution>
