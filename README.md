@@ -25,15 +25,6 @@ Sistema de microservicios que permite:
 - ✅ Gestionar y consultar **pagos**
 - ✅ Consultar **historial de pagos** por cliente
 
-### Historias de Usuario cubiertas
-
-| ID | Descripción |
-|----|-------------|
-| HU-001 | Registro de clientes |
-| HU-002 | Consulta de clientes |
-| HU-004 | Registro de pagos |
-| HU-005 | Consulta de historial de pagos |
-
 ---
 
 ## 🏗️ Arquitectura
@@ -46,13 +37,13 @@ El sistema está compuesto por **dos microservicios independientes**, cada uno o
 │   ├── Domain
 │   ├── Application
 │   ├── Infrastructure
-│   └── Api  →  :5001
+│   └── Api  
 │
 └── 🔸 PagosService
     ├── Domain
     ├── Application
     ├── Infrastructure
-    └── Api  →  :5002
+    └── Api 
 ```
 
 ### Flujo del sistema
